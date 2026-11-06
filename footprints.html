@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>我的足迹 · Range Rover</title><link rel="stylesheet" href="footprints.css"></head>
+<body>
+<main class="footprints">
+<header class="navigation"><a href="index.html" class="back" aria-label="返回驾驶证">←</a><span class="eyebrow">YOUR EXPLORATION JOURNAL</span><span class="preview">示例数据</span></header>
+<section class="map-section" aria-labelledby="map-title">
+<div class="map-heading"><p class="eyebrow">每一程，都留下探索的印记</p><h1 id="map-title">探索，步履不停。</h1></div>
+<div class="map-frame"><svg class="map" viewBox="0 0 840 650" role="group" aria-labelledby="map-description"><title id="map-description">长三角及浙江沿海区域示意图，标记上海、杭州、宁波与温州四座城市。轮廓与位置仅为示意，不用于导航。</title><defs><radialGradient id="land"><stop stop-color="#263d45"/><stop offset="1" stop-color="#14232d"/></radialGradient><linearGradient id="lit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91c94a" stop-opacity=".38"/><stop offset="1" stop-color="#6fb72e" stop-opacity=".14"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="5"/></filter><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#9cb0b8" stroke-opacity=".035"/></pattern></defs>
+<rect width="840" height="650" fill="url(#grid)"/>
+<g class="geography"><path d="M-30 -20H535L519 40 548 76 530 112 568 137 553 166 600 193 610 224 585 242 618 270 588 301 622 328 605 350 632 375 605 405 620 430 593 448 600 478 577 510 581 541 555 565 542 606 507 650H-30Z" fill="url(#land)" stroke="#597078" stroke-opacity=".4"/>
+<g fill="none" stroke="#748588" stroke-opacity=".18" stroke-width="1"><path d="M0 123L112 142 177 109 247 144 309 115 374 144 438 109 530 112M0 262L82 249 151 281 230 253 315 292 386 268 465 294 588 301M0 452L94 424 161 452 248 421 324 453 401 418 478 447 593 448M151 0L177 109 151 281 161 452 142 650M326 0L309 115 315 292 324 453 350 650M446 0L438 109 465 294 478 447 465 650"/><path d="M-20 375Q140 220 288 337T605 350M78 -20Q267 99 211 221T248 421T265 670M384 -20Q328 133 410 221T401 418T450 680"/></g>
+<path d="M438 185L553 166 600 193 610 224 566 246 538 240 514 265 480 256 453 282 412 271 393 242Z" fill="url(#lit)" stroke="#82b64b" stroke-opacity=".7"/>
+<path d="M412 271L453 282 480 256 514 265 538 240 566 246 585 242 618 270 588 301 622 328 605 350 632 375 605 405 620 430 593 448 600 478 577 510 546 499 518 470 484 452 472 406 442 389 459 351 420 329 393 299Z" fill="url(#lit)" stroke="#82b64b" stroke-opacity=".65"/>
+<g fill="#526c6d" opacity=".45"><ellipse cx="640" cy="282" rx="8" ry="3"/><ellipse cx="660" cy="298" rx="4" ry="2"/><ellipse cx="649" cy="330" rx="6" ry="3"/><ellipse cx="657" cy="387" rx="4" ry="7"/></g></g>
+<path class="route-glow" d="M573 220Q510 225 444 286Q535 300 576 352Q589 419 554 494"/><path class="route" d="M573 220Q510 225 444 286Q535 300 576 352Q589 419 554 494"/>
+<g class="city secondary"><circle cx="396" cy="131" r="3"/><text x="374" y="112">南京</text></g>
+<g class="city" data-city="shanghai" role="button" tabindex="0" aria-pressed="false"><circle class="city-hit" cx="573" cy="220" r="25"/><circle class="halo" cx="573" cy="220" r="15"/><circle cx="573" cy="220" r="5"/><text x="591" y="213">上海</text></g>
+<g class="city" data-city="hangzhou" role="button" tabindex="0" aria-pressed="false"><circle class="city-hit" cx="444" cy="286" r="25"/><circle class="halo" cx="444" cy="286" r="15"/><circle cx="444" cy="286" r="5"/><text x="380" y="284">杭州</text></g>
+<g class="city" data-city="ningbo" role="button" tabindex="0" aria-pressed="false"><circle class="city-hit" cx="576" cy="352" r="25"/><circle class="halo" cx="576" cy="352" r="15"/><circle cx="576" cy="352" r="5"/><text x="594" y="358">宁波</text></g>
+<g class="city" data-city="wenzhou" role="button" tabindex="0" aria-pressed="false"><circle class="city-hit" cx="554" cy="494" r="25"/><circle class="halo" cx="554" cy="494" r="15"/><circle cx="554" cy="494" r="5"/><text x="573" y="501">温州</text></g>
+<text class="sea-label" x="650" y="438">东 海</text>
+</svg></div>
+<div class="city-detail" id="city-detail" role="status" aria-live="polite"><span class="detail-marker">⌖</span><div><strong id="detail-city">选择一座城市</strong><p id="detail-date">点击地图标记或下方足迹记录，查看点亮日期</p></div></div>
+<div class="map-footer"><div class="wordmark">RANGE<br>ROVER</div><div class="map-key"><span class="dot"></span>已点亮城市 <span class="map-disclaimer">区域示意图 · 非导航地图</span></div></div>
+</section>
+<div class="cards">
+<section class="summary glass" aria-labelledby="summary-title"><div class="card-heading"><h2 id="summary-title">我的足迹</h2><span class="section-en">MY FOOTPRINTS</span></div><div class="summary-grid"><div><strong>4<span>城</span></strong><p>点亮城市</p></div><div><strong>236<span>天</span></strong><p>历时天数</p></div><div><strong class="recent">杭州市</strong><p>最近点亮城市</p></div></div></section>
+<section class="records glass" aria-labelledby="records-title"><div class="card-heading"><h2 id="records-title"><span class="pin">⌖</span> 足迹记录</h2><span class="update">更新至 2026.11.04</span></div><ol class="city-list"><li><button class="record-button" data-city="hangzhou" aria-pressed="false"><span class="city-number">01</span><div><h3>杭州市</h3><p>浙江 · HANGZHOU</p></div><time datetime="2026-10-20">2026.10.20 <span>点亮</span></time><span class="record-dot"></span></button></li><li><button class="record-button" data-city="ningbo" aria-pressed="false"><span class="city-number">02</span><div><h3>宁波市</h3><p>浙江 · NINGBO</p></div><time datetime="2026-09-18">2026.09.18 <span>点亮</span></time><span class="record-dot"></span></button></li><li><button class="record-button" data-city="wenzhou" aria-pressed="false"><span class="city-number">03</span><div><h3>温州市</h3><p>浙江 · WENZHOU</p></div><time datetime="2026-08-12">2026.08.12 <span>点亮</span></time><span class="record-dot"></span></button></li><li><button class="record-button" data-city="shanghai" aria-pressed="false"><span class="city-number">04</span><div><h3>上海市</h3><p>上海 · SHANGHAI</p></div><time datetime="2026-03-14">2026.03.14 <span>点亮</span></time><span class="record-dot"></span></button></li></ol></section>
+</div><footer class="page-footer"><p>从容驾驭 · 探索无界</p><span>当前为设计预览，城市、日期与连线均为示例；连线不代表真实行驶轨迹。</span></footer>
+</main><script src="footprints.js"></script></body></html>
